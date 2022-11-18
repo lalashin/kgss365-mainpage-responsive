@@ -94,6 +94,24 @@
 .slider .swiper-slide h2 em {display:block; font-size: 59px;font-weight: 100;}
 .slider .swiper-slide p {font-size: 27px; color: #fff; padding-top: 55px;}
 
+/* 제품 */
+.product {padding: 100px 0;}
+.product .product_cate {margin-bottom: 60px;}
+.product .product_cate ul {overflow: hidden; width: 848px; margin: 0 auto;}
+.product .product_cate li {float: left; width: 210px; text-align: center; border: 1px solid #c4c4c4; margin-right: -1px;}
+.product .product_cate li a { display: block; padding: 15px 0; font-size: 18px; color: #666; font-weight: 700; }
+.product .product_cate li.active a {background: #666; color: #fff;}
+
+.product .product_list {height: 592px;}
+.product .product_list > div {}
+.product .product_list > div > div {display: inline-block; width: 292px; height: 592px; border: 1px solid #c4c4c4;}
+.product .product_list > div > div .prod_img {}
+.product .product_list > div > div .prod_img .label {}
+.product .product_list > div > div .prod_img .kgss {}
+
+.product .product_list > div > div .infor {}
+.product .product_list > div > div .infor h3 {}
+.product .product_list > div > div .infor h3 span {}
 
 /* 미디어쿼리 */
 @media (max-width: 1290px){

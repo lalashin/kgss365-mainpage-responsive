@@ -302,7 +302,10 @@
     #recent .row {padding: 0 8px;}
     .recent { margin-top: 8px; padding: 16px;}
     .recent h3 {font-size: 18px; margin-bottom: 10px;}
+    .recent .recent_left { height: 300px;}
+    .recent .recent_right {padding: 17px;}
     .recent .recent_right .work_title {font-size: 24px;}
+    
 }
 
 @media (max-width: 480px){

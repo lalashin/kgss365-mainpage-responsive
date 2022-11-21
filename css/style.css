@@ -4,6 +4,8 @@
 #mNav { display: none; position: absolute; top: 10px;right: 14px;}
 #header {width: 100%; border-bottom: 1px solid #c6c6c6; background:#fff;}
 #banner {position: relative;}
+#product {background-color: #f8f8f8;}
+#technology {}
 
 
 /* 가운데 영역 */
@@ -126,6 +128,17 @@
 }
 .product .product_list > div > div > div .infor .infor_btn a:last-child {margin-right: 0;}
 
+/* 테크놀로지 */
+.technology {overflow: hidden; padding: 100px 0;}
+.technology img {display: block;}
+.technology h2 {font-size: 30px; font-weight: 500; text-transform: uppercase;}
+.technology .tech_left { overflow: hidden; float: left; width: 66%; margin-right: 2%; }
+.technology .tech_left .tech_box1 {float: left; width: 50%;}
+.technology .tech_left .tech_box2 {float: left; width: 50%;}
+.technology .tech_right {float:left; width: 32%; }
+
+
+
 /* 미디어쿼리 */
 @media (max-width: 1290px){
     .container{width: 100%;}
@@ -163,8 +176,8 @@
 
     #mNav {right: 6px; }
     .row {padding: 0 16px;}
-
-    #product .row {background: #fff; margin: 24px;padding: 24px;}
+    
+    #product .row {background: #fff; margin: 24px 24px 0 24px;padding: 24px;}
     #product .ir_so {position: static; width: auto; height: auto; line-height: normal;
         text-indent: 0; font-size: 24px; font-weight: bold; padding-bottom: 20px;
     }
@@ -179,6 +192,12 @@
         bottom: -10px; width: 100%; height: 2px; background: #666;
     }
     .product .product_cate li.active a {background: none; color: #666;}
+    
+    #technology .row {padding: 24px;}
+    .technology {padding: 24px;background: #fff;}
+    .technology h2 {font-size: 24px;}
+    .technology .tech_left {width: 100%;}
+    .technology .tech_right {display: none;}
 }
 
 @media (max-width: 600px){
@@ -218,6 +237,10 @@
     }
     .product .product_list > div > div > div .infor .infor_btn a:last-child {display: none;}
     
+    #technology .row {padding: 0 8px;}
+    .technology {padding: 16px}
+    .technology h2 {font-size: 18px; margin-bottom: 10px;}
+
 }
 
 @media (max-width: 480px){

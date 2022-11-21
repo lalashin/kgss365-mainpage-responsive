@@ -163,8 +163,15 @@
 .recent .recent_left .play {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 120px; height: 120px;}
 .recent .recent_left .play .st0 {fill: #fff; opacity: 0.3;}
 .recent .recent_left .play .st1 {fill:#fff; }
-.recent .recent_right { position: absolute; right: 0; top: 165px; width: 400px; height: 500px; background: #f0f0f0;}
 
+.recent .recent_right {position: absolute; right: 0; top: 165px; padding: 34px; width: 400px; height: 500px; background: #f0f0f0; box-sizing: border-box;}
+.recent .recent_right .work_title {font-size: 28px; margin-bottom: 0px; font-weight: 500;}
+.recent .recent_right .work_date {font-size: 16px;}
+.recent .recent_right .work_lebel {font-size: 16px;  margin: 20px 0;}
+.recent .recent_right .work_desc {font-size: 14px; line-height: 24px; margin-bottom: 20px;}
+.recent .recent_right .btn {overflow: hidden; margin-top: 2%; text-align: center;}
+.recent .recent_right .btn a {float: left; width: 32.33333%; box-sizing: border-box; padding: 10px 0; display: block;
+    margin-right: 2%; background-color: #fff; color: #000;border: 1px solid #000;}
 
 
 
@@ -202,6 +209,9 @@
     .aboutcompany .desc {background: none; padding-bottom:0}
     .aboutcompany .about-box {display: none;}
     
+    .recent .recent_left {margin-right: 0; width: 100%; height: 400px;}
+    .recent .recent_right { position: relative; top: 0; width: 100%; height: auto;}
+
 
 }
 
@@ -230,14 +240,16 @@
     
     #technology .row {padding: 24px;}
     .technology {padding: 24px;background: #fff;}
-    .technology h2 {font-size: 24px;}
+    .technology h2 {font-size: 24px; margin-bottom: 10px;}
     .technology .tech_left {width: 100%;}
     .technology .tech_right {display: none;}
 
-    
+    #recent .row {padding: 0 24px;}
+    .recent { margin-top: 24px; background: #fff; padding: 24px;}
    
-    
-    
+    .recent h3 {font-size: 24px; font-weight: 500; text-transform: uppercase; height: 27px; margin-bottom: 20px;}
+    .recent .recent_right {padding: 24px ;}
+    .recent .recent_right .work_title { margin-bottom: 10px;}
 }
 
 @media (max-width: 600px){
@@ -286,6 +298,11 @@
     .aboutcompany em {font-size: 18px;}
     .aboutcompany h2 .thegas { font-size: 28px;}
     .aboutcompany .desc {font-size: 18px; padding-bottom:0}
+
+    #recent .row {padding: 0 8px;}
+    .recent { margin-top: 8px; padding: 16px;}
+    .recent h3 {font-size: 18px; margin-bottom: 10px;}
+    .recent .recent_right .work_title {font-size: 24px;}
 }
 
 @media (max-width: 480px){

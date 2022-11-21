@@ -6,7 +6,8 @@
 #banner {position: relative;}
 #product {background-color: #f8f8f8;}
 #technology {}
-
+#aboutcompany  { width: 100%; background: url(../img/bg01.jpg) no-repeat center top; background-size: cover;}
+#recent {}
 
 /* 가운데 영역 */
 .container{position: relative; width: 1280px; margin: 0 auto; background: rgba(0, 0, 0, 0); }
@@ -137,6 +138,34 @@
 .technology .tech_left .tech_box2 {float: left; width: 50%;}
 .technology .tech_right {float:left; width: 32%; }
 
+/*어비웃 컴퍼니*/
+.aboutcompany { padding: 100px 0; text-align: center; color:#fff ;}
+.aboutcompany em {font-size: 24px; font-weight: 300;}
+.aboutcompany h2 .thegas {font-size: 40px;}
+.aboutcompany .desc {font-size: 24px;font-weight: 300; padding-bottom: 20px; 
+    background: url(../img/bg01_bar.png) no-repeat bottom center; background-size: 70%;}
+.aboutcompany .about-box {overflow: hidden; padding: 20px 3% 0 3%;}
+.aboutcompany .about-box > div { float: left; width: 27.333%; margin: 4% 3% 0 3%; box-sizing: border-box; border: 1px solid rgba(255, 255, 255, 0.3) ;
+    padding: 24px 24px 48px 24px;
+}
+.aboutcompany .about-box > div:hover {background: rgba(0, 0, 0, 0.6);}
+.aboutcompany .about-box > div a { position: relative; color: #fff; }
+.aboutcompany .about-box > div a h3 {font-size: 24px;}
+.aboutcompany .about-box > div a p {font-size: 24px; font-weight: 300;}
+.aboutcompany .about-box > div a span { background: url(../img/icon_arrow.png) no-repeat center top; background-size: 70%;
+     width: 68px; height: 18px; left: -35px; bottom:-24px; 
+}
+
+.recent {padding: 100px 0; position: relative;}
+.recent h3 { font-size: 30px; font-weight: 500;margin-bottom: 20px;}
+.recent .recent_left { position: relative; margin-right: 423px; height: 500px; 
+    background: #ccc url(../img/recent_bg.jpg) center center; background-size: cover;}
+.recent .recent_left .play {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 120px; height: 120px;}
+.recent .recent_left .play .st0 {fill: #fff; opacity: 0.3;}
+.recent .recent_left .play .st1 {fill:#fff; }
+.recent .recent_right { position: absolute; right: 0; top: 165px; width: 400px; height: 500px; background: #f0f0f0;}
+
+
 
 
 /* 미디어쿼리 */
@@ -169,6 +198,11 @@
     .product .product_cate ul {width: auto;}
     .product .product_cate li {width: 25%; box-sizing: border-box;}
 
+    .aboutcompany {padding: 50px 0;}
+    .aboutcompany .desc {background: none; padding-bottom:0}
+    .aboutcompany .about-box {display: none;}
+    
+
 }
 
 @media (max-width: 768px){
@@ -177,6 +211,7 @@
     #mNav {right: 6px; }
     .row {padding: 0 16px;}
     
+    #product {background: none;}
     #product .row {background: #fff; margin: 24px 24px 0 24px;padding: 24px;}
     #product .ir_so {position: static; width: auto; height: auto; line-height: normal;
         text-indent: 0; font-size: 24px; font-weight: bold; padding-bottom: 20px;
@@ -198,6 +233,11 @@
     .technology h2 {font-size: 24px;}
     .technology .tech_left {width: 100%;}
     .technology .tech_right {display: none;}
+
+    
+   
+    
+    
 }
 
 @media (max-width: 600px){
@@ -214,6 +254,7 @@
         background: rgba(0, 0, 0, 0.6);border-color:#fff}
     .swiper-pagination-bullet {width: 13px !important;height: 13px !important;}
     
+    #product {background: none;}
     #product .container {position: relative;}
     #product .container:after {content:''; position: absolute; z-index: 20; top: 0;right: 0;width: 8px;height: 100%;
         background: #d9d7e0;
@@ -237,14 +278,23 @@
     }
     .product .product_list > div > div > div .infor .infor_btn a:last-child {display: none;}
     
-    #technology .row {padding: 0 8px;}
+    #technology .row {padding: 0 8px 8px 8px;}
     .technology {padding: 16px}
     .technology h2 {font-size: 18px; margin-bottom: 10px;}
 
+    .aboutcompany {padding: 18px 0;}
+    .aboutcompany em {font-size: 18px;}
+    .aboutcompany h2 .thegas { font-size: 28px;}
+    .aboutcompany .desc {font-size: 18px; padding-bottom:0}
 }
 
 @media (max-width: 480px){
     .product .product_cate li a {margin-right: 9px;}
+
+    .aboutcompany {padding: 18px 0;}
+    .aboutcompany em {font-size: 16px;}
+    .aboutcompany h2 .thegas { font-size: 24px;}
+    .aboutcompany .desc {font-size: 16px; padding-bottom:0}
 }
 
 @media (max-width: 320px){

@@ -1,18 +1,17 @@
 (function($){
-
     /* 트레일러 영상 플레이어를 활성화 */
     /* YouTube iframe API: https://developers.google.com/youtube/player_parameters */
-    
-    (function handleTrailer() {
-        // 셀렉터 캐시
-        var $selector = {
+
+    (function handleTrailer(){
+        //셀럭터 캐시
+        let $selector = {
             body: $( "body" ),
             overlay: $( "#blackout" ),
-            modal: $( "#trailerModal" ),
+            modla: $( "#trailerModal" ),
             showButton: $( "#showTrailer" ),
             hideButton: $( "#hideTrailer" ),
         };
-        
+       
         // 플레이어
         var player = {
             obj: null, // 플레이어 오브젝트
@@ -30,11 +29,11 @@
             visible: false
         };
 
-        // 보이기, 숨기기 버튼 활성화
+        //보이기, 숨기기 버튼 활성화
         $selector.showButton.on( "click", showPlayer );
         $selector.hideButton.on( "click", hidePlayer );
 
-        // YouTube API를 이용해 iframe을 생성
+        //YouTube API를 이용해 ifram을 생성
         function setPlayer( id ) {
             player.obj = new YT.Player( "trailer", {
                 width: 480,
@@ -50,9 +49,8 @@
             $( window ).on( "resize orientationchange", function() {
                 resizePlayer();
             });
-        };
+        }
 
-        // 화면 크기에 비례해 iframe의 크기 조절
         function resizePlayer() {
             var viewport = {}, frame = {}, modal = {};
 
@@ -68,28 +66,30 @@
             $selector.modal.css( modal );
 
             player.obj.setSize( frame.width, frame.height );
-        };
+        }
 
-        // iframe 보이기
-        function showPlayer() {
-            // 처음 클릭시 iframe을 생성 
-            if ( !player.obj ) {
-                setPlayer( $selector.showButton.data("youtube") );
+        //iframe 보이기
+        function showPlayer(){
+            if( !player.obj ) {
+                setPlayer( $selector.showButton.data("youtube"));
             };
 
             $selector.body.addClass("modal_on");
             $selector.overlay.show();
             player.visible = true;
+
         };
 
-        // iframe 감추기
+        //ifram 감추기
         function hidePlayer() {
             player.obj.stopVideo();
             $selector.overlay.hide();
             $selector.body.removeClass("modal_on");
             player.visible = false;
-        };
+        }
+
 
     })();
 
-})(jQuery);     
+
+})(jQuery);
